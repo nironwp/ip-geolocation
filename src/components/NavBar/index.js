@@ -3,7 +3,7 @@ import { useForm, useController } from "react-hook-form";
 import { Container, Title, InputContainer, Form, InputText, InputSubmit } from './styles';
 
 function NavBar({setIp}) {
-  const { register, handleSubmit, watch, formState: { errors }, reset } =  useForm();
+  const { register, handleSubmit} =  useForm();
   const  enviarDados  =  data  =>  {
     console.log(data);
     setIp(data._ip)

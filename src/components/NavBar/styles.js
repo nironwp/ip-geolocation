@@ -5,12 +5,14 @@ import ArrowPng from "../../images/icon-arrow.svg"
 
 export const Container = styled.div`
     width: 100%;
-    height: 30%;
+    height: 30%;z-index:5;
     position: relative;
     margin: 0 auto;
     background-image: url(${BackgroundPattern});
     background-size: 100% 100%;
     background-repeat: no-repeat;
+
+    
 `;
 
 export const Title = styled.h1`
@@ -28,6 +30,21 @@ export const Title = styled.h1`
         width: 45%;
         font-size: 2em;
     }
+
+    @media (max-width:767px){
+        width: 60%;
+        font-size: 2em;
+    }
+    @media (max-width:960px){
+        width: 50%;
+    }
+    @media (max-width:2460px){
+        z-index: -1;
+    }
+    @media (max-height:667px){
+        font-size: 1.5em;
+    }
+    
 `;
 
 export const InputContainer = styled.div`
@@ -41,6 +58,14 @@ export const InputContainer = styled.div`
     @media (max-width:500px){
         width: 55%;
     }
+    @media (max-width:767px){
+        top: 40%;
+    }
+
+    @media (max-width:960px){
+        top: 20%;
+    }
+    
 `;
 
 export const Form = styled.form`

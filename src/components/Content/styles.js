@@ -17,13 +17,17 @@ export const InfosSection = styled.div`
     display: flex;
     justify-content: space-around;
 
-
+    @media (max-width: 2460px){
+        top: 40%;
+        width: 80%;
+        right: 10%;
+    }
 
     @media (max-width: 1100px){
         justify-content: space-between;
-        width: 70%;
-        right: 15%;
-        top: 28%;
+        width: 90%;
+        right: 5%;
+        top: 38%;
     }
 
     @media (max-width:500px){
@@ -32,10 +36,14 @@ export const InfosSection = styled.div`
         top: 25%;
     }
 
-    @media (max-height:650px){
+    @media (max-height:667px){
         top: 28%;
+        z-index: 99;
     }
 
+    @media (max-height:450px){
+        display: none;
+    }
 `;
 
 export const Mapa = styled.div`
